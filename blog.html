@@ -1,0 +1,109 @@
+<!-- putting comments in _layouts' front matter will cause error -->
+
+<!-- a layout is a template that wraps around page content -->
+<!-- a layout uses the front matter of the page on which it's called, so you can use objects etc. here -->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/assets/css/styles.css"> <!-- Jekyll generates this css from your scss file -->
+    <!-- plugins -->
+    <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Blog</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Blog" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Blog" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"Blog","url":"/blog.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- environments -->
+    <!--
+    * if you want to output something in production (final) but not development (wip),
+    you can make use of environments.
+    * the default JEKYLL_ENV is development.
+    * set JEKYLL_ENV=production
+    * bundle exec jekyll build
+    * set JEKYLL_ENV=development
+    -->
+    <!-- 
+      <script src="my-analytics-script.js"></script>
+     -->
+  </head>
+
+  <body>
+    <!--
+the "include" Tag allows you to include content from another
+file stored in an _includes folder. it's useful to keep
+repeated source code in one place
+
+this navigation will be included in the default layout
+-->
+
+<!-- "page.url" is a variable that checks the current url -->
+
+<nav>
+   <!-- iterate through data file -->
+    <a href="/" >
+      Home
+    </a>
+   <!-- iterate through data file -->
+    <a href="/about.html" >
+      About
+    </a>
+   <!-- iterate through data file -->
+    <a href="/blog.html" class="current">
+      Blog
+    </a>
+   <!-- iterate through data file -->
+    <a href="/staff.html" >
+      Staff
+    </a>
+  
+</nav>
+
+    <!-- Jekyll makes posts available at site.posts -->
+<!-- post.url is automatically set by Jekyll to the output path of the post -->
+<!-- post.title is pulled from the post filename and can be overridden by setting title in front matter -->
+<!-- post.excerpt is the first paragraph of content by default -->
+
+<h1>Latest Posts</h1>
+
+<ul>
+  
+    <li>
+      <h2><a href="/2018/08/22/kiwifruit.html">Kiwifruit</a></h2>
+      <p>Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
+berry of several species of woody vines in the genus Actinidia.</p>
+
+    </li>
+  
+    <li>
+      <h2><a href="/2018/08/21/apples.html">Apples</a></h2>
+      <p>An apple is a sweet, edible fruit produced by an apple tree.</p>
+
+    </li>
+  
+    <li>
+      <h2><a href="/2018/08/20/bananas.html">Bananas</a></h2>
+      <p>A banana is an edible fruit – botanically a berry – produced by several kinds
+of large herbaceous flowering plants in the genus Musa.</p>
+
+    </li>
+  
+</ul>
+ <!-- "content" is a special variable that returns the rendered content of the page on which it’s called -->
+
+    
+      <p>( production )</p>
+    
+    
+  </body>
+</html>

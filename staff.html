@@ -1,0 +1,107 @@
+<!-- putting comments in _layouts' front matter will cause error -->
+
+<!-- a layout is a template that wraps around page content -->
+<!-- a layout uses the front matter of the page on which it's called, so you can use objects etc. here -->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Staff</title>
+    <link rel="stylesheet" href="/assets/css/styles.css"> <!-- Jekyll generates this css from your scss file -->
+    <!-- plugins -->
+    <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Staff</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Staff" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Staff" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"Staff","url":"/staff.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- environments -->
+    <!--
+    * if you want to output something in production (final) but not development (wip),
+    you can make use of environments.
+    * the default JEKYLL_ENV is development.
+    * set JEKYLL_ENV=production
+    * bundle exec jekyll build
+    * set JEKYLL_ENV=development
+    -->
+    <!-- 
+      <script src="my-analytics-script.js"></script>
+     -->
+  </head>
+
+  <body>
+    <!--
+the "include" Tag allows you to include content from another
+file stored in an _includes folder. it's useful to keep
+repeated source code in one place
+
+this navigation will be included in the default layout
+-->
+
+<!-- "page.url" is a variable that checks the current url -->
+
+<nav>
+   <!-- iterate through data file -->
+    <a href="/" >
+      Home
+    </a>
+   <!-- iterate through data file -->
+    <a href="/about.html" >
+      About
+    </a>
+   <!-- iterate through data file -->
+    <a href="/blog.html" >
+      Blog
+    </a>
+   <!-- iterate through data file -->
+    <a href="/staff.html" class="current">
+      Staff
+    </a>
+  
+</nav>
+
+    <h1>Staff</h1>
+
+<ul>
+   <!-- iterate over collection documents to output all staff -->
+    <li>
+      <h2><a href="/authors/egg.html">Egg Salad</a></h2>
+      <h3>Side Dish</h3>
+      <p><p>Egg is an amniotic egg on land.</p>
+</p>
+    </li>
+   <!-- iterate over collection documents to output all staff -->
+    <li>
+      <h2><a href="/authors/jill.html">Jill Smith</a></h2>
+      <h3>Chief Editor</h3>
+      <p><!-- like blog posts, these page titles come from the filename (capitalized) -->
+
+<p>Jill is an avid fruit grower based in the south of France.</p>
+</p>
+    </li>
+   <!-- iterate over collection documents to output all staff -->
+    <li>
+      <h2><a href="/authors/ted.html">Ted Doe</a></h2>
+      <h3>Writer</h3>
+      <p><p>Ted has been eating fruit since he was baby.</p>
+</p>
+    </li>
+  
+</ul>
+ <!-- "content" is a special variable that returns the rendered content of the page on which it’s called -->
+
+    
+      <p>( production )</p>
+    
+    
+  </body>
+</html>

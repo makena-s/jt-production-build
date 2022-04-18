@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"_sass/main.scss"
+	],
+	"sourcesContent": [
+		"// Sass is a CSS extension baked right into Jekyll\n\n// tell Sass to look for a file called main.scss,\n// in the sass directory (_sass/) by default\n@import \"main\";\n\n// here you'll only need one main css file, but for larger\n// projects this is a handy way to organize css\n",
+		"// create and style a class\r\n.current {\r\n  color: green;\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": "ACCA,AAAA,QAAQ,CAAC,EACP,KAAK,EAAE,KAAK,GACb"
+}
