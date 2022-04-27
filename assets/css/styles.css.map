@@ -7,8 +7,8 @@
 	],
 	"sourcesContent": [
 		"// Sass is a CSS extension baked right into Jekyll\n\n// tell Sass to look for a file called main.scss,\n// in the sass directory (_sass/) by default\n@import \"main\";\n\n// here you'll only need one main css file, but for larger\n// projects this is a handy way to organize css\n",
-		"// this css gets imported into the site's stylesleet (/assets/css/styles.scss)\r\n// create and style classes, etc.\r\n\r\na {\r\n  text-decoration: none;\r\n}\r\na:link {\r\n  color:blue;\r\n}\r\na:visited {\r\n  color:blue;\r\n}\r\na:hover {\r\n  color:orange;\r\n}\r\na:active {\r\n  color:yellow;\r\n}\r\n\r\n// highlight current page on navigation bar\r\n.current {\r\n  color: green;\r\n}\r\n"
+		"// this css gets imported into the site's stylesleet (/assets/css/styles.scss)\r\n// create and style classes, etc.\r\n\r\na {\r\n  text-decoration: none;\r\n}\r\na:link {\r\n  color:blue;\r\n}\r\na:visited {\r\n  color:blue;\r\n}\r\na:hover {\r\n  color:orange;\r\n}\r\na:active {\r\n  color:yellow;\r\n}\r\n\r\n// highlight current page on navigation bar\r\n// currrently doesn't work\r\n.current {\r\n  color: green;\r\n}\r\n"
 	],
 	"names": [],
-	"mappings": "ACGA,AAAA,CAAC,CAAC,EACA,eAAe,EAAE,IAAI,GACtB;;AACD,AAAA,CAAC,CAAC,IAAI,CAAC,EACL,KAAK,EAAC,IAAI,GACX;;AACD,AAAA,CAAC,CAAC,OAAO,CAAC,EACR,KAAK,EAAC,IAAI,GACX;;AACD,AAAA,CAAC,CAAC,KAAK,CAAC,EACN,KAAK,EAAC,MAAM,GACb;;AACD,AAAA,CAAC,CAAC,MAAM,CAAC,EACP,KAAK,EAAC,MAAM,GACb;;AAGD,AAAA,QAAQ,CAAC,EACP,KAAK,EAAE,KAAK,GACb"
+	"mappings": "ACGA,AAAA,CAAC,CAAC,EACA,eAAe,EAAE,IAAI,GACtB;;AACD,AAAA,CAAC,CAAC,IAAI,CAAC,EACL,KAAK,EAAC,IAAI,GACX;;AACD,AAAA,CAAC,CAAC,OAAO,CAAC,EACR,KAAK,EAAC,IAAI,GACX;;AACD,AAAA,CAAC,CAAC,KAAK,CAAC,EACN,KAAK,EAAC,MAAM,GACb;;AACD,AAAA,CAAC,CAAC,MAAM,CAAC,EACP,KAAK,EAAC,MAAM,GACb;;AAID,AAAA,QAAQ,CAAC,EACP,KAAK,EAAE,KAAK,GACb"
 }
