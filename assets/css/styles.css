@@ -1,5 +1,7 @@
 .current { color: green; }
 
+a { text-decoration: none; }
+
 a:link { color: blue; }
 
 a:visited { color: blue; }
